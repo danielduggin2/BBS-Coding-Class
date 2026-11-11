@@ -1,58 +1,98 @@
 # BBS-Coding-Class
-# Intro to Python — 6-Week Lesson Plan (Golf Theme)
-**For 4th grade (starting), Becca's classes — Days 1 & 4, 1:00-3:25pm, 50-minute periods**
+# Intro to Python: 6-Week Lesson Plan (Golf Theme)
 
-**Tool to use:** replit.com or Google Colab (colab.research.google.com) — both run Python right in the browser, no install needed. (Trinket.io has shut down, so it's not an option.)
+**For 4th grade, 50 minute periods, two sessions per week**
 
-**Theme:** Everything builds toward one running project — a "Mini Golf Tracker" — using golf scores, holes, and par. Kids don't need to know golf well; just tell them: "golf is a game where lower numbers are better, and you're trying to hit a ball into a hole in as few tries (strokes) as possible."
+**Tool to use:** Google Colab (colab.research.google.com). It runs Python right in the browser, so there is nothing to install. Students sign in with their school Google accounts.
 
-**Session structure (roughly, for every 50-minute class):**
-- Warm-up / recap (5-8 min) — re-explain last session's concept before moving on
-- Talking points (5-10 min) — new concept
-- Guided coding together (15-20 min) — type it as a class, everyone follows along
-- Independent practice (10-15 min) — they try it on their own
-- Wrap-up / share (5 min) — a couple kids show what they got
+**Theme:** Everything builds toward one running project, a "Mini Golf Tracker," using golf scores, holes, and par. Kids don't need to know golf well. Just tell them: "Golf is a game where lower numbers are better, and you're trying to hit a ball into a hole in as few tries (strokes) as possible."
 
-Expect a lot of repeat questions in the first few weeks — that's normal and the warm-up blocks are built in for exactly that.
+**Session structure (roughly, for every 50 minute class):**
+- Warm-up / recap (5 to 8 min): re-explain last session's concept before moving on
+- Talking points (5 to 10 min): new concept
+- Guided coding together (15 to 20 min): type it as a class, everyone follows along
+- Independent practice (10 to 15 min): they try it on their own
+- Wrap-up / share (5 min): a couple kids show what they got
+
+Expect a lot of repeat questions in the first few weeks. That's normal, and the warm-up blocks are built in for exactly that.
 
 ---
 
 # WEEK 1
 
-## SESSION 1: What is a programming language? Getting set up + print()
+## SESSION 1: Meet your teacher, what is a programming language, and print()
 
-### Warm-up (5 min)
-Introduce the golf theme. Ask: "Has anyone played golf or mini golf?" Explain: lower score is better, you're trying to get the ball in the hole in as few tries (strokes) as possible. Tell them: by the end of this unit, everyone will build their own computer program that acts like a mini golf scorecard.
+### Timing for this session (50 minutes)
 
-### Talking points: what is a programming language? (10 min)
-- People talk to each other using languages like English or Spanish. A **programming language** is how people talk to computers — it's a language the computer understands and can act on.
+| Block | Minutes |
+|---|---|
+| Golf basics and project preview | 3 |
+| About me and my projects | 12 |
+| What is a programming language | 7 |
+| Getting set up in Colab | 10 |
+| First code: print() | 8 |
+| Spot the bug, then their own print lines | 7 |
+| Wrap-up | 3 |
+
+If sign in takes longer than expected, skip the "spot the bug" game and use it as the warm-up for Session 2.
+
+### Golf basics (3 min)
+Introduce the golf theme. Ask: "Has anyone played golf or mini golf?" Explain: lower score is better, and you're trying to get the ball in the hole in as few tries (strokes) as possible. Tell them: by the end of this unit, everyone will build their own computer program that acts like a mini golf scorecard.
+
+### About me and my projects (12 min)
+The goal is to show students a real person who writes code, and to show where this class is headed.
+
+- **Who I am:** [what students call you]. I keep our school's iPads, Wi-Fi, and computers working.
+- **I also write code:** websites, apps, and programs that do boring jobs automatically.
+- **My coding story:** I studied computer science in college. [Add one line about your first program or why you started.] I'm still learning new things all the time.
+- **Show 2 or 3 projects (about 2 minutes each):**
+  - My golf app: it keeps track of golf rounds and scores. The mini version we build in this class uses the same ideas: scores, par, and messages.
+  - Read-Along Library: it turns books into audio so you can listen while you read along.
+  - [Optional third project]
+- **Connect it back:** Every big project starts with tiny steps like `print("Hello")`, which is exactly what you will write today.
+- **Questions (about 2 min):** "Ask me anything about coding!"
+
+**Prep for this section:**
+- Have screenshots ready as a backup in case a live demo or the Wi-Fi fails.
+- Use sample data only. No student names, no school systems, and no customer data from work.
+- Describe the Read-Along Library as turning books into audio. Don't mention who it is for.
+- Test the demos on the classroom display beforehand.
+
+### Talking points: what is a programming language? (7 min)
+- People talk to each other using languages like English or Spanish. A **programming language** is how people talk to computers. It's a language the computer understands and can act on.
 - Computers are very literal. They only do exactly what you type, nothing more, nothing less, and they do it exactly in order, one step at a time.
-- There are lots of programming languages (mention a couple kids may have heard of, like Scratch, JavaScript, or Python) — today we're using **Python**, one of the most widely used languages in the real world.
-- What can you actually build with a programming language? Websites, video games, phone apps, robots, even the recommendation system that picks videos for you. Basically: anything on a screen or a device that reacts to you was built by someone writing code.
-- Our version today is small but real: we're going to build the first piece of a "golf scorecard" program, and we'll keep adding to it every week until it can track a full round of golf — with scores, math, and messages that react to how you did.
+- There are lots of programming languages (mention a couple kids may have heard of, like Scratch, JavaScript, or Python). Today we're using **Python**, one of the most widely used languages in the real world.
+- What can you build with a programming language? Websites, video games, phone apps, robots, even the recommendation system that picks videos for you. Anything on a screen or a device that reacts to you was built by someone writing code.
+- Our version is small but real: we'll build a "golf scorecard" program, adding to it every week until it can track a full round of golf with scores, math, and messages that react to how you did.
 
-### Getting set up (10 min)
-Walk everyone through logging into replit.com or Colab and creating a new Python file/notebook. Expect this to eat some time in Session 1 only — budget for it.
+### Getting set up in Colab (10 min)
+Walk everyone through these steps:
+1. Open Safari and go to colab.research.google.com.
+2. Sign in with your school Google account.
+3. Make a new notebook. It opens with a code cell ready to type in.
 
-### Guided coding (15 min)
-Type this together and click Run:
+Expect this to eat some time in Session 1 only, so budget for it. The first time a cell runs, it may take a few seconds to connect.
+
+### First code: print() (8 min)
+Type this together and click the play button next to the cell:
 ```python
 print("Welcome to the golf course!")
 ```
-Ask: What happened? (The computer said back exactly what we told it to say — this is our first real program.)
+Ask: What happened? (The computer said back exactly what we told it to say. This is our first real program.)
 
 Then try a few more, letting kids call out what to print:
 ```python
 print("Let's play 9 holes today!")
 print("Good luck!")
 ```
-Mini "fix the bug" game: write `print("Hello")` with a missing quote or parenthesis on the board and ask kids to spot what's wrong. This introduces the idea that computers need things typed exactly right — that's part of what a programming language is.
 
-### Independent practice (5 min)
-Have each student write 3 print statements of their own choosing and run them.
+### Spot the bug, then your turn (7 min)
+Mini "fix the bug" game (2 min): write `print("Hello)` on the board with a missing quote, and ask kids to spot what's wrong. This shows that computers need things typed exactly right. That's part of what a programming language is.
 
-### Wrap-up (5 min)
-A couple kids read one thing they printed out loud. Remind them: this print statement is the first building block of the golf scorecard program we'll be building together all semester.
+Then have each student write 3 print statements of their own choosing and run them (5 min).
+
+### Wrap-up (3 min)
+A couple kids read one thing they printed out loud. Remind them: this print statement is the first building block of the golf scorecard program we'll build together.
 
 ---
 
@@ -63,7 +103,7 @@ Quick verbal check: "What does print() do?" Have a student come up and type a pr
 
 ### Talking points (8 min)
 - A **variable** is like a labeled box that holds information for later.
-- Analogy: imagine a golf ball bag with a name tag on it. The tag is the variable name; what's inside is the value.
+- Analogy: imagine a golf ball bag with a name tag on it. The tag is the variable name, and what's inside is the value.
 
 ### Guided coding (18 min)
 ```python
@@ -76,13 +116,13 @@ print(favorite_club)
 print(hole_number)
 ```
 Point out:
-- `=` doesn't mean "equals" like in math class — it means "put this value in the box."
+- `=` doesn't mean "equals" like in math class. It means "put this value in the box."
 - Words need quotes (`"Jordan"`), numbers don't (`1`).
 
-Have kids predict what will print before running it — good habit to build early.
+Have kids predict what will print before running it. It's a good habit to build early.
 
 ### Independent practice (10 min)
-Have each student create 3 variables about themselves (name, favorite color, grade number) and print all three. This is their "player profile" — they'll reuse this idea later.
+Have each student create 3 variables about themselves (name, favorite color, grade number) and print all three. This is their "player profile," and they'll reuse the idea later.
 
 ### Wrap-up (6 min)
 A few students share their player profile output.
@@ -115,17 +155,17 @@ Let kids change the numbers and re-run to see the total change.
 Give students 3 new hole scores of their choosing and have them add up the total, printing the result.
 
 ### Wrap-up (5 min)
-Share totals — see who has the lowest (best) score, tying back to the golf theme.
+Share totals and see who has the lowest (best) score, tying back to the golf theme.
 
 ---
 
 ## SESSION 4: Comparing to par
 
 ### Warm-up / recap (8 min)
-Recap addition example from last session — re-run it together, ask what `total_strokes` means.
+Recap the addition example from last session. Re-run it together and ask what `total_strokes` means.
 
 ### Talking points (5 min)
-- If you take more strokes than par, you did worse; fewer, you did better.
+- If you take more strokes than par, you did worse. Fewer strokes, you did better.
 
 ### Guided coding (15 min)
 ```python
@@ -141,23 +181,23 @@ Explain: if `difference` is 0, you matched par. Negative means you beat par (gre
 Give students 3 new hole scores. Have them:
 1. Add up the total strokes.
 2. Compare it to a par of 12.
-3. Print both results as a full sentence, e.g. `print("My total score was", total_strokes, "strokes, which is", difference, "compared to par.")`
+3. Print both results as a full sentence, for example `print("My total score was", total_strokes, "strokes, which is", difference, "compared to par.")`
 
 ### Wrap-up (7 min)
-Share results, talk about what negative vs. positive differences mean.
+Share results and talk about what negative vs. positive differences mean.
 
 ---
 
 # WEEK 3
 
-## SESSION 5: Conditionals — if / elif / else
+## SESSION 5: Conditionals (if / elif / else)
 
 ### Warm-up / recap (8 min)
-Recap `difference = total_strokes - par` — ask a couple kids what a negative vs positive number meant last time.
+Recap `difference = total_strokes - par`. Ask a couple kids what a negative vs. positive number meant last time.
 
 ### Talking points (8 min)
 - A **conditional** lets the computer make a decision and do different things depending on what's true.
-- Golf analogy: depending on your score, you'd react differently — celebrate, shrug, or try again.
+- Golf analogy: depending on your score, you'd react differently. You might celebrate, shrug, or try again.
 
 ### Guided coding (18 min)
 ```python
@@ -187,7 +227,7 @@ Ask a few kids to share a combination that triggered each of the three messages.
 Quick recap: what do `if`, `elif`, and `else` each do?
 
 ### Talking points (5 min)
-- We can chain more conditions together for more detail — like golf terms: eagle, birdie, par, bogey.
+- We can chain more conditions together for more detail, like golf terms: eagle, birdie, par, bogey.
 
 ### Guided coding (20 min)
 ```python
@@ -212,7 +252,7 @@ else:
 Students try different `score` and `par` combinations to hit each message.
 
 ### Wrap-up review game (8 min)
-Call out a score/par pair verbally and have kids shout the term (eagle/birdie/par/bogey) before checking it in code — fun, fast-paced recap.
+Call out a score/par pair verbally and have kids shout the term (eagle/birdie/par/bogey) before checking it in code. It's a fun, fast-paced recap.
 
 ---
 
@@ -221,10 +261,10 @@ Call out a score/par pair verbally and have kids shout the term (eagle/birdie/pa
 ## SESSION 7: Lists
 
 ### Warm-up / recap (8 min)
-Quick recap of variables and conditionals — ask a student to explain what `if` does in their own words.
+Quick recap of variables and conditionals. Ask a student to explain what `if` does in their own words.
 
 ### Talking points (8 min)
-- A **list** is a way to store many values in one variable — like a full scorecard instead of one hole at a time.
+- A **list** is a way to store many values in one variable, like a full scorecard instead of one hole at a time.
 
 ### Guided coding (18 min)
 ```python
@@ -234,7 +274,7 @@ print(scores)
 print(scores[0])
 print(scores[1])
 ```
-Explain: the numbers in brackets tell Python which position to look at, and counting starts at 0 (this trips kids up — spend extra time here).
+Explain: the numbers in brackets tell Python which position to look at, and counting starts at 0. This trips kids up, so spend extra time here.
 
 ### Independent practice (11 min)
 Have students create their own list of 5 scores and print a couple of individual holes by their position.
@@ -247,7 +287,7 @@ Ask: "What's `scores[0]` in your list?" for a couple of students.
 ## SESSION 8: Loops
 
 ### Warm-up / recap (8 min)
-Recap lists and indexing — re-run last session's example together.
+Recap lists and indexing. Re-run last session's example together.
 
 ### Talking points (8 min)
 - A **loop** lets the computer repeat instructions without typing them over and over.
@@ -260,13 +300,13 @@ scores = [4, 5, 3, 6, 4]
 for score in scores:
     print("Hole score:", score)
 ```
-Let kids change the numbers in the list and re-run — the loop automatically handles however many scores are there.
+Let kids change the numbers in the list and re-run. The loop automatically handles however many scores are there.
 
 ### Independent practice (11 min)
 Have students loop through their own list of scores and print each one.
 
 ### Wrap-up (5 min)
-Ask: "What would happen if you added a 6th score to your list? Do you need to change your loop?" (No — that's the point.)
+Ask: "What would happen if you added a 6th score to your list? Do you need to change your loop?" (No. That's the point.)
 
 ---
 
@@ -275,11 +315,11 @@ Ask: "What would happen if you added a 6th score to your list? Do you need to ch
 ## SESSION 9: Functions
 
 ### Warm-up / recap (8 min)
-Recap loops — have a student explain what `for score in scores:` does.
+Recap loops. Have a student explain what `for score in scores:` does.
 
 ### Talking points (8 min)
 - A **function** is a reusable set of instructions you can use again and again, like a recipe.
-- You give it information, it does something with it, and can react differently depending on what you gave it.
+- You give it information, it does something with it, and it can react differently depending on what you gave it.
 
 ### Guided coding (18 min)
 ```python
@@ -294,7 +334,7 @@ def check_score(score, par):
 check_score(3, 4)
 check_score(5, 4)
 ```
-Walk through it line by line: `def` starts a new function, `check_score` is its name, `score` and `par` are boxes it expects to be filled in when it's used.
+Walk through it line by line: `def` starts a new function, `check_score` is its name, and `score` and `par` are boxes it expects to be filled in when it's used.
 
 ### Independent practice (11 min)
 Have students call `check_score` with a few different number combinations of their own choosing.
@@ -307,7 +347,7 @@ Ask: "Why is a function better than writing the if/elif/else every single time?"
 ## SESSION 10: Combining loops and functions
 
 ### Warm-up / recap (8 min)
-Recap functions — re-run last session's `check_score` example.
+Recap functions. Re-run last session's `check_score` example.
 
 ### Talking points (5 min)
 - Now we combine everything: loop through a list of scores, and call the function on each one.
@@ -320,22 +360,22 @@ par = 4
 for score in scores:
     check_score(score, par)
 ```
-This is the big "aha" moment — the loop repeats, and each time it calls the function to check that hole's score.
+This is the big "aha" moment. The loop repeats, and each time it calls the function to check that hole's score.
 
 ### Independent practice (17 min)
-Have students build their own version from scratch: their own list of 5 scores, their own `par`, a loop, and calling `check_score` inside it. This is effectively a rehearsal for the final project.
+Have students build their own version from scratch: their own list of 5 scores, their own `par`, a loop, and a call to `check_score` inside it. This is effectively a rehearsal for the final project.
 
 ### Wrap-up (5 min)
 Ask a few kids to share their full output.
 
 ---
 
-# WEEK 6 — FINAL PROJECT: Mini Golf Tracker
+# WEEK 6: FINAL PROJECT, Mini Golf Tracker
 
 ## SESSION 11: Project work day
 
 ### Warm-up (5 min)
-Introduce the final project: a Mini Golf Tracker that uses everything learned — variables, math, a list, a loop, and a function.
+Introduce the final project: a Mini Golf Tracker that uses everything learned: variables, math, a list, a loop, and a function.
 
 ### Project requirements (5 min)
 Explain what it needs to include:
@@ -365,10 +405,10 @@ print("Compared to par:", difference)
 ```
 
 ### Work time (35 min)
-Students build their tracker, teacher circulates to help. Expect this to take most of the period, and that's fine.
+Students build their tracker while the teacher circulates to help. Expect this to take most of the period, and that's fine.
 
 ### Wrap-up (5 min)
-Quick check-in: "How far did you get?" No pressure to be finished — Session 12 is for finishing.
+Quick check-in: "How far did you get?" No pressure to be finished. Session 12 is for finishing.
 
 ---
 
@@ -388,9 +428,21 @@ Have volunteers run their tracker for the class and share their results.
 
 ---
 
-## Notes for you (the instructor)
-- Don't worry about over-explaining `if / elif / else` the first time it comes up — kids absorb it faster by seeing it run than by hearing it described. Re-explain as needed; that's what the warm-up blocks are for.
-- List indexing starting at 0 is consistently the trickiest concept — plan extra time there in Session 7.
+## Notes for the instructor
+
+**Before Session 1:**
+- Colab must be enabled by your Google Workspace admin for student accounts, and parental consent should be handled according to your school's policy.
+- Test Colab on a real student iPad: sign in with a student account, type `print("Hello")`, and run it. Check that the quotes come out straight, that the keyboard doesn't cover the cell, and that your network doesn't block it.
+
+**Colab tips:**
+- Tell students to "click the play button," not "click Run."
+- Colab may automatically add closing quotes and parentheses as kids type. Point this out if it confuses anyone.
+- Curly quotes copied from slides or documents won't run in Python. Make sure code on slides uses straight quotes.
+- On iPads, brackets and quotes take extra taps on the on-screen keyboard. If typing is slow, shorten the guided coding and use fill-in-the-blank code instead.
+
+**Teaching tips:**
+- Don't worry about over-explaining `if / elif / else` the first time it comes up. Kids absorb it faster by seeing it run than by hearing it described. Re-explain as needed. That's what the warm-up blocks are for.
+- List indexing starting at 0 is consistently the trickiest concept, so plan extra time there in Session 7.
 - If a session runs short, the wrap-up/share time is the easiest thing to extend. If a session runs long, cut the wrap-up short rather than the independent practice.
 - Common typos to watch for: missing colons `:` after `for`, `if`, and `def` lines, and indentation (Python cares about spacing at the start of a line).
-- This plan is a living document — if the class needs an extra session on any topic, it's easy to split a session in two and push the rest back a week.
+- This plan is a living document. If the class needs an extra session on any topic, it's easy to split a session in two and push the rest back a week.
